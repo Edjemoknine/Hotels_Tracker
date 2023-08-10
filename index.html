@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotels Booking</title>
+</head>
+<body>
+    <div id="mapContainer"></div>
+
+    <div class="search_popUp">
+        <header>
+            <h1>Hotels</h1>
+            <p>Choose Your Favorite Hotel</p>
+        </header>
+        <form>
+            <input type="text" placeholder="Enter Country" id="country">
+            <ul id="auto"></ul>
+
+            <input type="text" placeholder="Choose Country" id="language">
+            <ul id="lg"></ul>
+            <button type="submit" id="search">Search</button>
+
+        </form>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+</script>
+</body>
+</html>
